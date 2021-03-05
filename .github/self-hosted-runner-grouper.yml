@@ -5,7 +5,12 @@ doc-builder:
 
 # Add 'group2' self-hosted runner group with every repo beginning with dotnet/docs.
 test-any: 
-  - any: ['test*', 'Any*']
+  - any: ['test','test*','Any*']
 
 test-all: 
   - all: ['Test*', 'Different*']
+
+test2-case-test: 
+  - any: ['test2']
+  - options:
+      nocase: true
