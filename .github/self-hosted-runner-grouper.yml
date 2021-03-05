@@ -1,0 +1,11 @@
+
+# Add 'doc-builder' self-hosted runner group with every repo beginning with dotnet/docs.
+doc-builder:
+  - docs*
+
+# Add 'group2' self-hosted runner group with every repo beginning with dotnet/docs.
+test-any: 
+  - any: ['test', 'Any']
+
+test-all: 
+  - all: ['Test', 'Different']
