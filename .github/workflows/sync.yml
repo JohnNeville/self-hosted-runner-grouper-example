@@ -16,7 +16,6 @@ jobs:
     steps:
     - name: Clone Repository
       uses: actions/checkout@v2
-    - uses: JohnNeville/self-hosted-runner-grouper@9c129f5808565d1386316eb079961952f8cf110e
+    - uses: JohnNeville/self-hosted-runner-grouper@25852509a5a317f8b68b22bea2730ccb9983504a
       with:
         org-auth-token: "${{ secrets.ORG_ADMIN_MACHINE_USER_PAT }}"
-        org-name: JohnNevilleDevs
