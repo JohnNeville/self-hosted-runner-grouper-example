@@ -9,7 +9,7 @@ test-any:
 
 test-all: 
   - all:
-      patterns: ['Test*', 'Different*']
+      patterns: ['Test*', '*Different*']
 
 test2-case-test: 
   - any:
