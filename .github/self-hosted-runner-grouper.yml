@@ -8,9 +8,11 @@ test-any:
   - any: ['test','test*','Any*']
 
 test-all: 
-  - all: ['Test*', 'Different*']
+  - all:
+      patterns: ['Test*', 'Different*']
 
 test2-case-test: 
-  - any: ['test2']
-  - options:
-      nocase: true
+  - any:
+      patterns: ['test2']
+      options:
+        nocase: true
