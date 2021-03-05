@@ -19,3 +19,4 @@ jobs:
     - uses: JohnNeville/self-hosted-runner-grouper@main
       with:
         org-auth-token: "${{ secrets.ORG_ADMIN_MACHINE_USER_PAT }}"
+        should-overwrite: false
