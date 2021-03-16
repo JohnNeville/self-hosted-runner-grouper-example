@@ -14,7 +14,7 @@ jobs:
   sync-runner-groups:
     runs-on: ubuntu-latest
     steps:
-    - name: Clone Repository
+    - name: Clone Repository # This can be ommitted by granting the ORG_ADMIN_MACHINE_USER_PAT token repo:* permissions
       uses: actions/checkout@v2
     - uses: JohnNeville/self-hosted-runner-grouper@main
       with:
